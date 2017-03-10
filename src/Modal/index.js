@@ -27,9 +27,9 @@ class Modal extends Component {
 
         const children = (
             <div className={this.className()} role="dialog" aria-hidden={!visible} style={style}>
-                <div className="modal__table">
-                    <div className="modal__cell">
-                        <div className="modal__content" ref="content">{this.props.children}</div>
+                <div className="Modal__table">
+                    <div className="Modal__cell">
+                        <div className="Modal__content" ref="content">{this.props.children}</div>
                     </div>
                 </div>
             </div>
@@ -53,20 +53,20 @@ class Modal extends Component {
     }
 
     className() {
-        var className = 'popup modal';
+        var className = 'Popup Modal';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' modal_theme_' + theme;
+            className += ' Modal_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' modal_size_' + this.props.size;
+            className += ' Modal_size_' + this.props.size;
         }
         if (this.props.visible) {
-            className += ' modal_visible';
+            className += ' Modal_visible';
         }
         if (this.shouldRenderToOverlay) {
-            className += ' modal_js_inited modal_has-animation';
+            className += ' Modal_js_inited Modal_has-animation';
         }
 
         if (this.props.className) {

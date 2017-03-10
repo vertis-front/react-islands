@@ -27,23 +27,23 @@ class TextArea extends Control {
 
     className() {
         // NOTE: see narqo/react-islands#98 for notes about `_js_inited`
-        let className = 'textarea textarea_js_inited';
+        let className = 'TextArea TextArea_js_inited';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' textarea_theme_' + theme;
+            className += ' TextArea_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' textarea_size_' + this.props.size;
+            className += ' TextArea_size_' + this.props.size;
         }
         if (this.props.disabled) {
-            className += ' textarea_disabled';
+            className += ' TextArea_disabled';
         }
         if (this.state.hovered) {
-            className += ' textarea_hovered';
+            className += ' TextArea_hovered';
         }
         if (this.state.focused) {
-            className += ' textarea_focused';
+            className += ' TextArea_focused';
         }
 
         if (this.props.className) {

@@ -35,17 +35,17 @@ class CheckboxGroup extends Component {
 
     className() {
         // NOTE: see narqo/react-islands#98 for notes about `_js_inited`
-        var className = 'checkbox-group checkbox-group_js_inited control-group';
+        var className = 'CheckboxGroup CheckboxGroup_js_inited ControlGroup';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' checkbox-group_theme_' + theme;
+            className += ' CheckboxGroup_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' checkbox-group_size_' + this.props.size;
+            className += ' CheckboxGroup_size_' + this.props.size;
         }
         if (this.props.type) {
-            className += ' checkbox-group_type_' + this.props.type;
+            className += ' CheckboxGroup_type_' + this.props.type;
         }
 
         if (this.props.className) {

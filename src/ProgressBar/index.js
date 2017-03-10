@@ -7,20 +7,20 @@ class ProgressBar extends Component {
 
         return (
             <div className={this.className()} role="progressbar" aria-valuenow={`${value}`}>
-                <div className="progressbar__bar" style={{width: `${value}`}}></div>
+                <div className="ProgressBar__bar" style={{width: `${value}`}}></div>
             </div>
         );
     }
 
     className() {
-        let className = 'progressbar';
+        let className = 'ProgressBar';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' progressbar_theme_' + theme;
+            className += ' ProgressBar_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' progressbar_size_' + this.props.size;
+            className += ' ProgressBar_size_' + this.props.size;
         }
 
         if (this.props.className) {

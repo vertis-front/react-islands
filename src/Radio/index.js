@@ -39,8 +39,8 @@ class Radio extends Control {
         } else {
             return (
                 <label className={this.className()} {...this.getControlHandlers()}>
-                    <span className="radio__box">
-                        <input ref="control" className="radio__control" type="radio" autoComplete="off"
+                    <span className="Radio__box">
+                        <input ref="control" className="Radio__control" type="radio" autoComplete="off"
                             id={id}
                             name={name}
                             disabled={disabled}
@@ -49,7 +49,7 @@ class Radio extends Control {
                             onChange={this.onControlChange}
                         />
                     </span>
-                    <span className="radio__text" role="presentation">
+                    <span className="Radio__text" role="presentation">
                         {this.props.children}
                     </span>
                 </label>
@@ -59,29 +59,29 @@ class Radio extends Control {
 
     className() {
         // NOTE: see narqo/react-islands#98 for notes about `_js_inited`
-        let className = 'radio radio_js_inited';
+        let className = 'Radio Radio_js_inited';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' radio_theme_' + theme;
+            className += ' Radio_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' radio_size_' + this.props.size;
+            className += ' Radio_size_' + this.props.size;
         }
         if (this.props.type) {
-            className += ' radio_type_' + this.props.type;
+            className += ' Radio_type_' + this.props.type;
         }
         if (this.props.disabled) {
-            className += ' radio_disabled';
+            className += ' Radio_disabled';
         }
         if (this.props.checked) {
-            className += ' radio_checked';
+            className += ' Radio_checked';
         }
         if (this.state.hovered) {
-            className += ' radio_hovered';
+            className += ' Radio_hovered';
         }
         if (this.state.focused) {
-            className += ' radio_focused';
+            className += ' Radio_focused';
         }
 
         if (this.props.className) {

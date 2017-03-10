@@ -14,10 +14,10 @@ class TextInput extends Control {
 
         let hasClear;
         if (this.props.hasClear) {
-            let clearClassName = 'input__clear';
+            let clearClassName = 'Input__clear';
 
             if (value) {
-                clearClassName += ' input__clear_visible';
+                clearClassName += ' Input__clear_visible';
             }
 
             hasClear = (
@@ -27,11 +27,11 @@ class TextInput extends Control {
 
         return (
             <span className={this.className()}>
-                <span className="input__box">
+                <span className="Input__box">
                     <input
                         ref="control"
                         {...this.getControlHandlers()}
-                        className="input__control"
+                        className="Input__control"
                         id={this.props.id}
                         name={this.props.name}
                         type={this.props.type}
@@ -55,26 +55,26 @@ class TextInput extends Control {
 
     className() {
         // NOTE: see narqo/react-islands#98 for notes about `_js_inited`
-        let className = 'input input_js_inited';
+        let className = 'Input Input_js_inited';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' input_theme_' + theme;
+            className += ' Input_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' input_size_' + this.props.size;
+            className += ' Input_size_' + this.props.size;
         }
         if (this.props.disabled) {
-            className += ' input_disabled';
+            className += ' Input_disabled';
         }
         if (this.state.hovered) {
-            className += ' input_hovered';
+            className += ' Input_hovered';
         }
         if (this.state.focused) {
-            className += ' input_focused';
+            className += ' Input_focused';
         }
         if (this.props.hasClear) {
-            className += ' input_has-clear';
+            className += ' Input_has-clear';
         }
 
         if (this.props.className) {

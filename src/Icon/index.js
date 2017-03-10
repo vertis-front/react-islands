@@ -21,7 +21,7 @@ class Icon extends Component {
     }
 
     className() {
-        var className = 'icon';
+        var className = 'Icon';
 
         if (this.props.className) {
             className += ' ' + this.props.className;

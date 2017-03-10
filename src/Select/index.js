@@ -102,7 +102,7 @@ class Select extends Component {
                 theme={theme}
                 size={size}
                 id={id}
-                className="select__button"
+                className="Select__button"
                 type="button"
                 disabled={disabled}
                 checked={checked}
@@ -112,7 +112,7 @@ class Select extends Component {
                 onFocusChange={this.onButtonFocusChange}
             >
                 {this.renderButtonText() || this.props.placeholder}
-                <Icon className="select__tick"/>
+                <Icon className="Select__tick"/>
             </Button>
         );
     }
@@ -128,7 +128,7 @@ class Select extends Component {
                 ref="menu"
                 theme={theme}
                 size={size}
-                className="select__menu"
+                className="Select__menu"
                 mode={mode}
                 value={value}
                 focused={focused}
@@ -157,23 +157,23 @@ class Select extends Component {
 
     className() {
         // NOTE: see narqo/react-islands#98 for notes about `_js_inited`
-        let className = 'select select_js_inited';
+        let className = 'Select Select_js_inited';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' select_theme_' + theme;
+            className += ' Select_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' select_size_' + this.props.size;
+            className += ' Select_size_' + this.props.size;
         }
         if (this.props.mode) {
-            className += ' select_mode_' + this.props.mode;
+            className += ' Select_mode_' + this.props.mode;
         }
         if (this.props.disabled) {
-            className += ' select_disabled';
+            className += ' Select_disabled';
         }
         if (this.state.popupVisible) {
-            className += ' select_opened';
+            className += ' Select_opened';
         }
 
         if (this.props.className) {

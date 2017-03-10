@@ -288,7 +288,7 @@ class Menu extends Component {
         const checkable = Boolean(mode);
         const hovered = index === hoveredIndex;
         const focused = index === focusedIndex;
-        const key = `menuitem${props.id || index}`;
+        const key = `MenuItem${props.id || index}`;
 
         return React.createElement(
             MenuItem,
@@ -311,11 +311,11 @@ class Menu extends Component {
     _renderMenuGroup(props, children) {
         let title;
         if (props.title) {
-            title = <div className="menu__group-title">{props.title}</div>;
+            title = <div className="Menu__group-title">{props.title}</div>;
         }
 
         return (
-            <div className="menu__group">
+            <div className="Menu__group">
                 {title}
                 {children}
             </div>
@@ -324,23 +324,23 @@ class Menu extends Component {
 
     className() {
         // NOTE: see narqo/react-islands#98 for notes about `_js_inited`
-        let className = 'menu menu_js_inited';
+        let className = 'Menu Menu_js_inited';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' menu_theme_' + theme;
+            className += ' Menu_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' menu_size_' + this.props.size;
+            className += ' Menu_size_' + this.props.size;
         }
         if (this.props.mode) {
-            className += ' menu_mode_' + this.props.mode;
+            className += ' Menu_mode_' + this.props.mode;
         }
         if (this.props.disabled) {
-            className += ' menu_disabled';
+            className += ' Menu_disabled';
         }
         if (this.state.focused) {
-            className += ' menu_focused';
+            className += ' Menu_focused';
         }
 
         if (this.props.className) {

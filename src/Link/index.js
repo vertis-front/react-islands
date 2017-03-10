@@ -28,26 +28,26 @@ class Link extends Control {
 
     className() {
         // NOTE: see narqo/react-islands#98 for notes about `_js_inited`
-        var className = 'link link_js_inited';
+        var className = 'Link Link_js_inited';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' link_theme_' + theme;
+            className += ' Link_theme_' + theme;
         }
         if (this.props.type) {
-            className += ' link_type_' + this.props.type;
+            className += ' Link_type_' + this.props.type;
         }
         if (this.props.disabled) {
-            className += ' link_disabled';
+            className += ' Link_disabled';
         }
         if (this.props.focused) {
-            className += ' link_focused';
+            className += ' Link_focused';
         }
         if (this.props.view) {
-            className += ' link_view_' + this.props.view;
+            className += ' Link_view_' + this.props.view;
         }
         if (this.state.hovered) {
-            className += ' link_hovered';
+            className += ' Link_hovered';
         }
 
         if (this.props.className) {

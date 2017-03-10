@@ -39,8 +39,8 @@ class Checkbox extends Control {
         } else {
             return (
                 <label className={this.className()} {...this.getControlHandlers()}>
-                    <span className="checkbox__box">
-                        <input ref="control" className="checkbox__control" type="checkbox" autoComplete="off"
+                    <span className="Checkbox__box">
+                        <input ref="control" className="Checkbox__control" type="checkbox" autoComplete="off"
                             id={id}
                             name={name}
                             disabled={disabled}
@@ -49,7 +49,7 @@ class Checkbox extends Control {
                             onChange={this.onControlChange}
                         />
                     </span>
-                    <span className="checkbox__text" role="presentation">
+                    <span className="Checkbox__text" role="presentation">
                         {this.props.children}
                     </span>
                 </label>
@@ -59,29 +59,29 @@ class Checkbox extends Control {
 
     className() {
         // NOTE: see narqo/react-islands#98 for notes about `_js_inited`
-        let className = 'checkbox checkbox_js_inited';
+        let className = 'Checkbox checkbox_js_inited';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' checkbox_theme_' + theme;
+            className += ' Checkbox_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' checkbox_size_' + this.props.size;
+            className += ' Checkbox_size_' + this.props.size;
         }
         if (this.props.type) {
-            className += ' checkbox_type_' + this.props.type;
+            className += ' Checkbox_type_' + this.props.type;
         }
         if (this.props.disabled) {
-            className += ' checkbox_disabled';
+            className += ' Checkbox_disabled';
         }
         if (this.props.checked) {
-            className += ' checkbox_checked';
+            className += ' Checkbox_checked';
         }
         if (this.state.hovered) {
-            className += ' checkbox_hovered';
+            className += ' Checkbox_hovered';
         }
         if (this.state.focused) {
-            className += ' checkbox_focused';
+            className += ' Checkbox_focused';
         }
 
         if (this.props.className) {

@@ -27,7 +27,7 @@ class Button extends Control {
         if (!this._wrappedChildren) {
             this._wrappedChildren = Component.wrap(props.children, child => (
                 // NOTE: this `key` is to harmonize the one we have in `Component.wrap()`
-                <span key="wrappedText" className="button__text">{child}</span>
+                <span key="wrappedText" className="Button__text">{child}</span>
             ));
         }
 
@@ -59,37 +59,37 @@ class Button extends Control {
 
     className() {
         // NOTE: see narqo/react-islands#98 for notes about `_js_inited`
-        var className = 'button button_js_inited';
+        var className = 'Button Button_js_inited';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' button_theme_' + theme;
+            className += ' Button_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' button_size_' + this.props.size;
+            className += ' Button_size_' + this.props.size;
         }
         if (this.props.type) {
-            className += ' button_type_' + this.props.type;
+            className += ' Button_type_' + this.props.type;
         }
         if (this.props.view) {
-            className += ' button_view_' + this.props.view;
+            className += ' Button_view_' + this.props.view;
         }
         if (this.props.disabled) {
-            className += ' button_disabled';
+            className += ' Button_disabled';
         }
         if (this.state.hovered) {
-            className += ' button_hovered';
+            className += ' Button_hovered';
         }
         if (this.state.pressed) {
-            className += ' button_pressed';
+            className += ' Button_pressed';
         }
         if (this.state.focused === 'hard') {
-            className += ' button_focused button_focused-hard';
+            className += ' Button_focused button_focused-hard';
         } else if (this.state.focused) {
-            className += ' button_focused';
+            className += ' Button_focused';
         }
         if (this.props.checked) {
-            className += ' button_checked';
+            className += ' Button_checked';
         }
 
         if (this.props.className) {

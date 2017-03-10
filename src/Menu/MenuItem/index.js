@@ -25,26 +25,26 @@ class MenuItem extends Component {
 
     className() {
         // NOTE: see narqo/react-islands#98 for notes about `_js_inited`
-        let className = 'menu-item menu-item_js_inited';
+        let className = 'MenuItem MenuItem_js_inited';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' menu-item_theme_' + theme;
+            className += ' MenuItem_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' menu-item_size_' + this.props.size;
+            className += ' MenuItem_size_' + this.props.size;
         }
         if (this.props.type) {
-            className += ' menu-item_type_' + this.props.type;
+            className += ' MenuItem_type_' + this.props.type;
         }
         if (this.props.disabled) {
-            className += ' menu-item_disabled';
+            className += ' MenuItem_disabled';
         }
         if (this.props.hovered) {
-            className += ' menu-item_hovered';
+            className += ' MenuItem_hovered';
         }
         if (this.props.checked) {
-            className += ' menu-item_checked';
+            className += ' MenuItem_checked';
         }
 
         if (this.props.className) {

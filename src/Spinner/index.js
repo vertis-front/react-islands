@@ -7,14 +7,14 @@ class Spinner extends Component {
     }
 
     className() {
-        let className = 'spin spin_visible';
+        let className = 'Spinner Spinner_visible';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' spin_theme_' + theme;
+            className += ' Spinner_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' spin_size_' + this.props.size;
+            className += ' Spinner_size_' + this.props.size;
         }
 
         if (this.props.className) {

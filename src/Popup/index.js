@@ -81,24 +81,24 @@ class Popup extends Component {
     }
 
     className() {
-        let className = 'popup';
+        let className = 'Popup';
 
         const theme = this.props.theme || this.context.theme;
         if (theme) {
-            className += ' popup_theme_' + theme;
+            className += ' Popup_theme_' + theme;
         }
         if (this.props.size) {
-            className += ' popup_size_' + this.props.size;
+            className += ' Popup_size_' + this.props.size;
         }
         if (this.state.direction) {
-            className += ' popup_direction_' + this.state.direction;
+            className += ' Popup_direction_' + this.state.direction;
         }
         if (this.props.visible) {
-            className += ' popup_visible';
+            className += ' Popup_visible';
         }
         if (this.shouldRenderToOverlay) {
-            // FIXME(@narqo): `popup_js_inited` must be set for CSS of bem-components
-            className += ' popup_js_inited';
+            // FIXME(@narqo): `Popup_js_inited` must be set for CSS of bem-components
+            className += ' Popup_js_inited';
         }
 
         if (this.props.className) {
