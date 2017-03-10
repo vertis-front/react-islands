@@ -2,6 +2,8 @@ import React from 'react';
 
 import Component from '../Component';
 
+require('./CheckboxGroup.css');
+
 class CheckboxGroup extends Component {
     constructor(props) {
         super(props);

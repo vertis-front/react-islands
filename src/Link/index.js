@@ -3,6 +3,8 @@ import React from 'react';
 import Control from '../Control';
 import pressable from '../pressable';
 
+require('./Link.css');
+
 class Link extends Control {
     render() {
         const { id, disabled, title } = this.props;

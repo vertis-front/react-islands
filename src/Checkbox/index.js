@@ -2,6 +2,8 @@ import React from 'react';
 import Control from '../Control';
 import Button from '../Button';
 
+require('./Checkbox.css');
+
 class Checkbox extends Control {
     constructor(props) {
         super(props);

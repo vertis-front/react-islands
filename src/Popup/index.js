@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import Component from '../Component';
 import Overlay from '../Overlay';
 
+require('./Popup.css');
+
 // FIXME(narqo@): this is only valid for theme islands
 const MAIN_OFFSET = 5;
 const VIEWPORT_OFFSET = 10;

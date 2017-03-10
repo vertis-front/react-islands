@@ -9,6 +9,8 @@ import Icon from '../Icon';
 import Group from '../Group';
 import Item from '../Item';
 
+require('./Select.css');
+
 class Select extends Component {
     constructor(props) {
         super(props);

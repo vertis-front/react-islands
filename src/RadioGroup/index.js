@@ -1,6 +1,8 @@
 import React from 'react';
 import Component from '../Component';
 
+require('./RadioGroup.css');
+
 class RadioGroup extends Component {
     constructor(props) {
         super(props);

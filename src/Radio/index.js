@@ -2,6 +2,8 @@ import React from 'react';
 import Control from '../Control';
 import Button from '../Button';
 
+require('./Radio.css');
+
 class Radio extends Control {
     constructor(props) {
         super(props);

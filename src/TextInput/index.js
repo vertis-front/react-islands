@@ -1,6 +1,8 @@
 import React from 'react';
 import Control from '../Control';
 
+require('./TextInput.css');
+
 class TextInput extends Control {
     constructor(props) {
         super(props);

@@ -1,6 +1,8 @@
 import React from 'react';
 import Component from '../Component';
 
+require('./Spinner.css');
+
 class Spinner extends Component {
     render() {
         return <span className={this.className()} />;

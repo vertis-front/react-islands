@@ -5,6 +5,8 @@ import Item from '../Item';
 import Group from '../Group';
 import MenuItem from './MenuItem';
 
+require('./Menu.css');
+
 const TIMEOUT_KEYBOARD_SEARCH = 1500;
 const KEY_CODE_SPACE = 32;
 

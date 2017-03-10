@@ -1,6 +1,8 @@
 import React from 'react';
 import Component from '../Component';
 
+require('../ProgressBar.css');
+
 class ProgressBar extends Component {
     render() {
         const value = `${this.props.value}%`;

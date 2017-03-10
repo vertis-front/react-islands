@@ -4,6 +4,8 @@ import Component from '../Component';
 import Control from '../Control';
 import pressable from '../pressable';
 
+require('./Button.css');
+
 class Button extends Control {
     constructor(...args) {
         super(...args);
