@@ -1,40 +1,40 @@
-.modal_theme_islands {
+.Modal_theme_islands {
   display: none;
   visibility: hidden;
   margin: -9999px 0 0 -9999px;
   background: rgba(50,50,50,0.2);
 }
-.modal_theme_islands,
-.modal_theme_islands .modal__content {
+.Modal_theme_islands,
+.Modal_theme_islands .Modal__content {
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
-.modal_theme_islands .modal__content {
+.Modal_theme_islands .Modal__content {
   margin: 5px;
   border: 1px solid #bfbfbf;
   background-color: #fff;
 }
-.modal_theme_islands.modal_js_inited {
+.Modal_theme_islands.Modal_js_inited {
   display: block;
 }
-.modal_theme_islands.modal_has-animation {
-  animation-name: modal_theme_islands;
+.Modal_theme_islands.Modal_has-animation {
+  animation-name: Modal_theme_islands;
 }
-.modal_theme_islands.modal_has-animation .modal__content {
-  animation-name: modal_theme_islands__content;
+.Modal_theme_islands.Modal_has-animation .Modal__content {
+  animation-name: Modal_theme_islands__content;
 }
-.modal_theme_islands.modal_visible {
+.Modal_theme_islands.Modal_visible {
   visibility: visible;
   margin: 0;
 }
-.modal_theme_islands.modal_visible.modal_has-animation {
-  animation-name: modal_theme_islands_visible;
+.Modal_theme_islands.Modal_visible.Modal_has-animation {
+  animation-name: Modal_theme_islands_visible;
 }
-.modal_theme_islands.modal_visible.modal_has-animation .modal__content {
-  animation-name: modal_theme_islands_visible__content;
+.Modal_theme_islands.Modal_visible.Modal_has-animation .Modal__content {
+  animation-name: Modal_theme_islands_visible__content;
 }
-@-moz-keyframes modal_theme_islands {
+@-moz-keyframes Modal_theme_islands {
   0% {
     visibility: visible;
     margin: 0;
@@ -49,7 +49,7 @@
     opacity: 0;
   }
 }
-@-webkit-keyframes modal_theme_islands {
+@-webkit-keyframes Modal_theme_islands {
   0% {
     visibility: visible;
     margin: 0;
@@ -64,7 +64,7 @@
     opacity: 0;
   }
 }
-@-o-keyframes modal_theme_islands {
+@-o-keyframes Modal_theme_islands {
   0% {
     visibility: visible;
     margin: 0;
@@ -79,7 +79,7 @@
     opacity: 0;
   }
 }
-@keyframes modal_theme_islands {
+@keyframes Modal_theme_islands {
   0% {
     visibility: visible;
     margin: 0;
@@ -94,7 +94,7 @@
     opacity: 0;
   }
 }
-@-moz-keyframes modal_theme_islands_visible {
+@-moz-keyframes Modal_theme_islands_visible {
   0% {
     opacity: 0;
   }
@@ -102,7 +102,7 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes modal_theme_islands_visible {
+@-webkit-keyframes Modal_theme_islands_visible {
   0% {
     opacity: 0;
   }
@@ -110,7 +110,7 @@
     opacity: 1;
   }
 }
-@-o-keyframes modal_theme_islands_visible {
+@-o-keyframes Modal_theme_islands_visible {
   0% {
     opacity: 0;
   }
@@ -118,7 +118,7 @@
     opacity: 1;
   }
 }
-@keyframes modal_theme_islands_visible {
+@keyframes Modal_theme_islands_visible {
   0% {
     opacity: 0;
   }
@@ -126,7 +126,7 @@
     opacity: 1;
   }
 }
-@-moz-keyframes modal_theme_islands__content {
+@-moz-keyframes Modal_theme_islands__content {
   0% {
     transform: scale(1);
   }
@@ -134,7 +134,7 @@
     transform: scale(1.5);
   }
 }
-@-webkit-keyframes modal_theme_islands__content {
+@-webkit-keyframes Modal_theme_islands__content {
   0% {
     transform: scale(1);
   }
@@ -142,7 +142,7 @@
     transform: scale(1.5);
   }
 }
-@-o-keyframes modal_theme_islands__content {
+@-o-keyframes Modal_theme_islands__content {
   0% {
     transform: scale(1);
   }
@@ -150,7 +150,7 @@
     transform: scale(1.5);
   }
 }
-@keyframes modal_theme_islands__content {
+@keyframes Modal_theme_islands__content {
   0% {
     transform: scale(1);
   }
@@ -158,7 +158,7 @@
     transform: scale(1.5);
   }
 }
-@-moz-keyframes modal_theme_islands_visible__content {
+@-moz-keyframes Modal_theme_islands_visible__content {
   0% {
     transform: scale(0.75);
   }
@@ -166,7 +166,7 @@
     transform: scale(1);
   }
 }
-@-webkit-keyframes modal_theme_islands_visible__content {
+@-webkit-keyframes Modal_theme_islands_visible__content {
   0% {
     transform: scale(0.75);
   }
@@ -174,7 +174,7 @@
     transform: scale(1);
   }
 }
-@-o-keyframes modal_theme_islands_visible__content {
+@-o-keyframes Modal_theme_islands_visible__content {
   0% {
     transform: scale(0.75);
   }
@@ -182,7 +182,7 @@
     transform: scale(1);
   }
 }
-@keyframes modal_theme_islands_visible__content {
+@keyframes Modal_theme_islands_visible__content {
   0% {
     transform: scale(0.75);
   }
